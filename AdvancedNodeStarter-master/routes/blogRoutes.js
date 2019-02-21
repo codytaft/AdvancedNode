@@ -26,7 +26,7 @@ module.exports = app => {
 
     // If yes, then respond to the request right away
     // and return
-    console.log(cachedBlogs);
+    // console.log(cachedBlogs);
     if (cachedBlogs) {
       console.log('Serving from cache');
       return res.send(JSON.parse(cachedBlogs));
